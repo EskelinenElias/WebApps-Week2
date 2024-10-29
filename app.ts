@@ -1,3 +1,5 @@
+console.log("Hello World!"); 
+
 // Define a vehicle type
 type TVehicle = {
   model: string;
