@@ -34,31 +34,31 @@ interface IBoat extends IVehicle {
   draft: number;
 }
 interface IPlane extends IVehicle {
-  wingSpan: number;
+  wingspan: number;
 }
 
 // Create instances of each extended interface
 const myCar: ICar = {
-  model: "Ford focus",
-  color: "Green",
-  year: 2016,
-  power: 150,
-  bodyType: "Hatchback",
-  wheelCount: 4
+  model: "Ford focus", 
+  color: "Green", 
+  year: 2016, 
+  power: 150, 
+  bodyType: "Hatchback", 
+  wheelCount: 4 
 };
 const myPlane: IPlane = {
-  model: "Boeing 777",
-  color: "White",
-  year: 2020,
-  power: 170000,
-  wingSpan: 65
+  model: "Boeing 777", 
+  color: "White", 
+  year: 2020, 
+  power: 170000, 
+  wingspan: 65 
 };
 const myBoat: IBoat = {
-  model: "Bella",
-  color: "Black",
-  year: 2022,
-  power: 100,
-  draft: 0.42
+  model: "Bella", 
+  color: "Black", 
+  year: 2022, 
+  power: 100, 
+  draft: 0.42 
 };
 
 // Log the created vehicles

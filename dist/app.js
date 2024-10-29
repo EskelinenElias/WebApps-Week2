@@ -1,5 +1,5 @@
 "use strict";
-// Create an object
+// Create a vehicle object
 const myVehicle = {
     model: "Boring generic vehicle",
     color: "Red",
@@ -8,7 +8,7 @@ const myVehicle = {
 };
 // Log the created vehicle
 console.log(myVehicle);
-// Create instances of each interface
+// Create instances of each extended interface
 const myCar = {
     model: "Ford focus",
     color: "Green",
@@ -22,7 +22,7 @@ const myPlane = {
     color: "White",
     year: 2020,
     power: 170000,
-    wingSpan: 65
+    wingspan: 65
 };
 const myBoat = {
     model: "Bella",
@@ -35,7 +35,7 @@ const myBoat = {
 console.log(myCar);
 console.log(myPlane);
 console.log(myBoat);
-// VehicleService generic class
+// Create generic vehicle service class
 class VehicleService {
     items = [];
     add(item) {
@@ -45,12 +45,12 @@ class VehicleService {
         return this.items;
     }
 }
-// Create instances for cars and boats
+// Create instances of vehicle service for cars and boats
 const cars = new VehicleService();
 const boats = new VehicleService();
 // Add car and boat instances to their lists
 cars.add(myCar);
 boats.add(myBoat);
 // Log the lists
-console.log("Cars:", cars.list());
-console.log("Boats:", boats.list());
+console.log(cars.list());
+console.log(boats.list());
