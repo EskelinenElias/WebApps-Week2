@@ -88,5 +88,5 @@ cars.add(myCar);
 boats.add(myBoat);
 
 // Log the lists
-console.log("Cars:", cars.list());
-console.log("Boats:", boats.list());
+console.log(cars.list());
+console.log(boats.list());
